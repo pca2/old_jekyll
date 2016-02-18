@@ -1,0 +1,38 @@
+# Site settings
+title: Carleton Atwater
+description: 'Developer & Writer'
+url: 'http://carletonatwter.com'
+baseurl: '/'
+google_analytics: 'UA-744503-3'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Carleton Atwater'
+  email: atwaterc@gmail.com
+  twitter_username: pca2
+  github_username:  pca2
+  linkedin_username: carletonatwater
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
